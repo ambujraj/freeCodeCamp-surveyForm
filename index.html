@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<section id="container">
+  <h1 id="title">freeCodeCamp Web developer Survey form</h1>
+  <section id="form-container">
+    <p id="description">Let's Introduce</p>
+    <form action="" id="survey-form">
+      <div class="row">
+        <label for="name" id="name-label" class>Name:</label>
+        <input type="input" id="name" required="" placeholder="Enter name">
+      </div>
+      <div class="row">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" required="" placeholder="Enter email">
+      </div>
+      <div class="row">
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" min="1" max="100" id="number" required placeholder="Age">
+      </div>
+      <div class="row">
+        <label for="dropdown" id="dropdown-label">Select the option that best describes you: </label>
+        <select id="dropdown">
+          <option value="" disabled selected>Select an option</option>
+          <option>Student</option>
+          <option>Developer</option>
+          <option>freelancer</option>
+          <option>other</option>
+        <select>
+      </div>
+      <div class="row">
+        <label for="gender" id="gender-label">Gender: </label>
+        <div>
+          <input type="radio" name="radio" value="male"> Male
+          <input type="radio" name="radio" value="female"> Female
+        </div>
+      </div>
+      <div class="row">
+        <label for="skills" id="skills-label">Other than HTML, CSS, JavaScript which technologies are you interested in?</label>
+        <div id="skills" class="col">
+          <fieldset>
+            <legend>Preprocessors</legend>
+            <label><input type="checkbox" name="checkbox" value="pug">LESS</label>
+            <label><input type="checkbox" name="checkbox" value="sass">SASS</label>
+            <label><input type="checkbox" name="checkbox" value="scss">SCSS</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>JavaScript Libraries</legend>
+            <label><input type="checkbox" value="angularjs">Angular.js</label>
+            <label><input type="checkbox" value="vuejs">Vue.js</label>
+            <label><input type="checkbox" value="jquery">jQuery</label>
+            <label><input type="checkbox" value="react">React</label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <label for="comments" id="comments-label">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Enter you comment..."> </textarea>
+      </div>
+      <div class="row">
+        <button type="submit" id="submit" class="btn" value="Submit"> Submit
+      </div>
+    </form>
+  </section>
+</section>
+  
+  
+
+</body>
+
+</html>
